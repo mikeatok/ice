@@ -1,4 +1,4 @@
-cards = {
+cards = [
     {
     "id": 1,
     "title": "New York Ranger up at half time by 2",
@@ -30,4 +30,4 @@ cards = {
     "source": ""
 },
 
-}
+]
