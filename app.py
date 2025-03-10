@@ -1,6 +1,6 @@
 from flask import Flask,render_template
 PORT= 2100
-from cards import cards
+from Cards import cards
 
 app = Flask(__name__,template_folder='template')
 
