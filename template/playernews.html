@@ -1,0 +1,28 @@
+{% extends "baseb.html" %} 
+
+{% block title %}4 The Fans{% endblock %}
+
+{% block content %}
+
+<h1>4 The Fans</h1>
+
+<div class="container">
+    {% if Cards != None: %}
+    {% for card in Cards %}
+    <div class="card">
+        <img src="{{ card['source'] }}">
+        <div class="title">
+            <h2>{{ card['title'] }}</h2>
+        </div>
+        <div class="body">
+            <p>{{ card[body] }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+</div>
+
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
