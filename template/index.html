@@ -8,10 +8,10 @@
 {% endblock %}
 {% block content %}
 <body>
-  
+  <div class="searchicon">
+  <i class="fa-solid fa-magnifying-glass"></i></div>
     <div class="search">
         <input type="search" placeholder="search" class="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     
     
@@ -46,10 +46,10 @@ line-height: normal;
 }
 
 .roboto-body {
-  font-family: "Roboto", serif;
+  font-family: "Doppio One";
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: oblique;
+  font-style: normal;
   font-size: medium;
   padding-bottom: 2rem;
 }
@@ -85,14 +85,17 @@ h1 {
     object-fit: cover;
     background-size: cover;
     border-top-right-radius: 1.25rem;
-    border-top-left-radius: 1.25rem;
+    border-top-left-radius: 1.25rem
 }
 
 .cards-header{margin: 0.5rem 0.5rem;}
 .cards-body{margin: 0.5rem 0.5rem;}
-.search{height: 5rem; width: 20rem;}
-input.search{height: 3rem; width: 22rem; box-shadow: #767679; stroke: black; box-shadow: #5C5BC7; justify-content: center; border-top-right-radius: 0.5rem; border-bottom-right-radius:0.5em; font-size: large; margin-left: 1em; display: flex;}
-.fa-solid.fa-magnifying-glass{padding-left: 21em;display: flex;}
+input.search{height: 3rem; width: 23rem; box-shadow: #767679; stroke: black; box-shadow: #5C5BC7; justify-content: center; border-top-right-radius: 0.5rem; border-bottom-right-radius:0.5em; font-size: large; margin-left: 1em; display: flex; margin-top: -2.5rem; text-align: center;}
+.fa-magnifying-glass{display: flex; padding-left: 2rem; font-size: xx-large;}
+.thumbsup,.comment,.share{font-size: xx-large;display: inline; padding-left: 1rem; justify-content: baseline;}
+
+
+
 
     
 </style>
@@ -103,6 +106,16 @@ input.search{height: 3rem; width: 22rem; box-shadow: #767679; stroke: black; box
   {% for cards in Cards %}
     <div class="cards">
       <img src="{{ cards['source'] }}" alt="Cards Image" class="cards-image" width="100%" height="100%"/>
+      <div class="thumbsup">
+      <i class="fa-solid fa-thumbs-up"></i></div>
+      <div class="comment">
+        <i class="fa-solid fa-comment"></i>
+       </div>
+       <div class="share">
+        <i class="fa-solid fa-share"></i>
+      </div>
+     
+      
       <div class="cards-header">
         <h2 class="roboto-title">{{ cards['title'] }}</h2>
       </div>
@@ -112,8 +125,7 @@ input.search{height: 3rem; width: 22rem; box-shadow: #767679; stroke: black; box
     </div>
   {% endfor %}
   {% endif %}
-</div>
-
+  <div class="matchup"><div class="team"><span class="team-name">New York Rangers</span><span class="score">1</span></div><div class="vs">VS</div><div class="team"><span class="team-name">Detroit Red Wings</span><span class="score">1</span></div></div></body></html>
 
 {% endblock %}
 {% block scripts %}
