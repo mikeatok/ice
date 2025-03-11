@@ -1,10 +1,19 @@
 
 {% extends "base.html"%} {% block title %}
 <title>4 the fans</title>
+<head>
+  <h1>4 the fans</h1>
 {% endblock %}
 
 {% block content %}
-<h1>4 the fans</h1>
+<body>
+  
+    <div class="search">
+        <input type="search" placeholder="search" class="search">
+    </div>
+    
+</body>
+
 <link rel="stylesheet" href="static/css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,6 +53,7 @@ h1 {
   background-color:#14135a;;
   color: white;
   height: 100px;
+  font-size: xx-large;
 }
 
 .container {
@@ -69,6 +79,10 @@ h1 {
 
 .cards-header{margin: 0.5rem 0.5rem;}
 .cards-body{margin: 0.5rem 0.5rem;}
+.search{height: 5rem; width: 20rem;}
+input.search{height: 3rem; width: 22rem; box-shadow: #767679; stroke: black; box-shadow: #14135a; justify-content: center; border-top-right-radius: 0.5rem; border-bottom-right-radius:0.5em; font-size: large; margin-left: 1em; display: flex;}
+.icons{display: flex; align-items: flex-end;}
+
     
 </style>
 
