@@ -22,98 +22,67 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
-     * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color:#FFFBFA
+     * {margin: 0;padding: 0;box-sizing: border-box;}
+     
+     body {background-color:#FFFBFA
 }
 
 .roboto-title {
-  color: #FFF;
+  color: #FFF;/* Small - 17.78px */font-family: "Doppio One";font-size: 1.11125rem;font-style: normal;font-weight: 400;line-height: normal;}
+  
+  .roboto-body {font-family: "Doppio One";font-optical-sizing: auto;font-weight: 400;font-style: normal;font-size: medium;padding-bottom: 2rem;}
 
+h1 {display: flex;align-items: center;justify-content: center;background-color:#8483E2;color: white;height: 100px;font-size: xx-large;padding-bottom: 1rem;width: 100%}
 
-/* Small - 17.78px */
-font-family: "Doppio One";
-font-size: 1.11125rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.container {margin: 1.5rem 1rem;}
 
-}
+.cards { width: auto; background-color: #5C5BC7; color: white; border-radius: 1.25rem;}
 
-.roboto-body {
-  font-family: "Doppio One";
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: medium;
-  padding-bottom: 2rem;
-}
-
-h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:#8483E2;
-  color: white;
-  height: 100px;
-  font-size: xx-large;
-  padding-bottom: 1rem;
- 
-}
-
-.container {
-  margin: 1.5rem 1rem;
-}
-
-.cards {
-  width: auto;
-  background-color: #5C5BC7;
-  color: white;
-  border-radius: 1.25rem;
-}
-
-.cards-image{
-  margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 75%;
-    object-fit: cover;
-    background-size: cover;
-    border-top-right-radius: 1.25rem;
-    border-top-left-radius: 1.25rem
-}
+.cards-image{margin-left: auto;  margin-right: auto;  width: 100%;  height: 75%;  object-fit: cover;  background-size: cover;  border-top-right-radius: 1.25rem;  border-top-left-radius: 1.25rem}
 
 .cards-header{margin: 0.5rem 0.5rem;}
+
 .cards-body{margin: 0.5rem 0.5rem;}
-input.search{height: 3rem; width: 23rem; box-shadow: #767679; stroke: black; box-shadow: #5C5BC7; justify-content: center; border-top-right-radius: 0.5rem; border-bottom-right-radius:0.5em; font-size: large; margin-left: 1em; display: flex; margin-top: -2.5rem; text-align: center;}
+
+input.search{height: 3rem; width: 90%; box-shadow: #767679; stroke: black; box-shadow: #5C5BC7; justify-content: center; border-top-right-radius: 0.5rem; border-bottom-right-radius:0.5em; font-size: large; margin-left: 1em; display: flex; margin-top: -2.5rem; text-align: center;}
+
 .fa-magnifying-glass{display: flex; padding-left: 2rem; font-size: xx-large;}
+
 .thumbsup,.comment,.share{font-size: xx-large;display: inline; padding-left: 1rem; justify-content: baseline;}
+
 .team-name{display: flex;
-width: 12rem;height: 2.75rem;flex-direction: column;justify-content: center;flex-shrink: 0;background-color: #5C5BC7;text-align: center;color: black;text-align: center;font-family: "Doppio One";font-size: 1.25rem;font-style: normal;font-weight: 400;line-height: normal; display: inline; margin-right: 0.35rem; border-radius: 1.25rem;}
-.team-names{display: flex;width: 12rem;height: 2.75rem;flex-direction: column;flex-shrink: 0;color:black;background-color: #5C5BC7;font-family: "Doppio One";font-size: 1.25rem;font-style: normal;font-weight: 400;line-height: normal; display: inline; padding-right: 1.2rem; text-align: end; justify-content: end; border-radius: 1.25rem;}
-.teams{display: inline; text-align: end}
-.vs{display: flex;width: 7.31675rem;height: 3.125rem;flex-direction: column;justify-content: center;flex-shrink: 0;color: #000;text-align: center;/* Heading 3 - 32.04px */font-family: "Doppio One";font-size: 2.0025rem;font-style: normal;font-weight: 400;line-height: normal; padding-left: 10rem;}
-img{width: 4.72638rem;height: 5rem;flex-shrink: 0;margin-left: 5rem;
-}
+width: 12rem;height: 4rem;flex-direction: column;justify-content: center;flex-shrink: 0;background-color: #5C5BC7;text-align: center;color: black;text-align: end;font-family: "Doppio One";font-size: 1.25rem;font-style: normal;font-weight: 400;line-height: normal; display: inline; margin-right: 0.35rem; border-radius: 1.25rem;}
+
+.team-names{display: flex;width: 12rem;height: 4rem;flex-direction: column;flex-shrink: 0;color:black;background-color:#5C5BC7;font-family: "Doppio One";font-size: 1.25rem;font-style: normal;font-weight: 400;line-height: normal; display: inline; padding-right: 1.2rem; text-align: end; justify-content: end; border-radius: 1.25rem;padding-left: -5rem;}
+
+.teams{display: inline; text-align: end; height: 4rem;}
+
+.vs{display: flex;width: 0.2rem;height: 1rem;flex-direction: column;flex-shrink: 0;color: #000;text-align: center;/* Heading 3 - 32.04px */font-family: "Doppio One";font-size: 2.0025rem;font-style: normal;font-weight: 400;line-height: normal; padding-left: 5rem;
+padding-bottom: 5rem;  margin-right: 1rem;padding-top: 1rem;}
+
+img{width: 4.72638rem;height: 5rem;flex-shrink: 0;margin-left: 5rem; display: inline; }
+
 .scores{display: flex;width: 7.89338rem;height: 3.125rem;flex-direction: column;justify-content: center;flex-shrink: 0; background-color: #5C5BC7;text-align: center;color: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
 text-align: center;/* Heading 3 - 32.04px */font-family: "Doppio One";font-size: 2.0025rem;font-style: normal;font-weight: 400;line-height: normal;}
+
 .score{display: flex;width: 7.5rem;height: 3.125rem;flex-direction: column;justify-content: center;flex-shrink: 0;color: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
-text-align: center;/* Heading 3 - 32.04px */font-family: "Doppio One";font-size: 2.0025rem;font-style: normal;font-weight: 400;line-height: normal; background-color: #5C5BC7;}
+text-align: center;/* Heading 3 - 32.04px */font-family: "Doppio One";font-size: 2.0025rem;font-style: normal;font-weight: 400;line-height: normal; background-color: #5C5BC7; border-radius: 1.25rem;}
+
 .scoress{display: flex;width: 6.98531rem;height: 3.125rem;flex-direction: column;justify-content: center;flex-shrink: 0;color: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
 text-align: center;/* Heading 3 - 32.04px */font-family: "Doppio One";font-size: 2.0025rem;font-style: normal;font-weight: 400;line-height: normal; background-color: #5C5BC7;}
+
 .team{display: inline; align-items: center;}
+
 .scoress,.scores{display: inline-flex; margin-right: -0.3rem; border-radius: 1.25rem;}
+
 .score{display: inline-flex;}
-.matchup{background-color: #5C5BC7; border-radius: 1.25rem;}
 
-    
+.matchup{background-color:#5C5BC7; border-radius: 1.25rem;width: 100%; height: 100%;}
+
+.imagevs{display: flex;  background-color:#FFFBFA; margin-top: 1rem; width: auto; margin-left: -4rem; justify-content: center;}
+
 </style>
-
+ 
 
 <div class="container">
   {% if Cards != None: %}
@@ -140,17 +109,18 @@ text-align: center;/* Heading 3 - 32.04px */font-family: "Doppio One";font-size:
   {% endfor %}
   {% endif %}
   <div class="matchup">
-    <div class="teams">
+   
+    <div class="team">
+     
+     <div class="scorebar">
       <span class="team-name">New York Rangers</span>
       <span class="team-names">Detroit Red Wings</span>
-    </div>
-    <div class="team">
-      <div class="vs">VS</div>
-     <div class="Image"><img src="https://i.ebayimg.com/images/g/9gwAAOSwdQFdtVOb/s-l1200.jpg" alt="new york rangers logo">
-     <img src="https://s3-alpha-sig.figma.com/img/12a7/8018/125f52a29fb333f7c5ad3aa602c7e561?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YxMLL~X5ZnBfQ~OyEiyq8snf2H8dJZsgLzgCxwazbVR8gSLlnYoe98M56fdAbwB8huEfvt~a9ZTSJ1b-kDAnIHA6UV6T~R1THpZ9fKnMzUStDG-sfTjBl1qYFFE-3FFe2mAjLr~2NROLwuTk9KRESYKHR8nA7mu9rj6xcRHD2YseKEu0nCyTP49OPE3a73mpyntTr-f0CKdw20S~tLQ6e~We7OyUDuK~FIiZOuGzkv6egdxgOQjFp1SY26ame0qu0iq9LiKbfgJeobiXm4vICjzIav0ei-3ydbGN4yxqbt67de2cWWe4sBJRy-CYRAtpN6c6d~8GnEXciNgg3BXgrA__" alt=" Detroit red wings logo"></div>
+      <span class="imagevs"><img src="https://i.ebayimg.com/images/g/9gwAAOSwdQFdtVOb/s-l1200.jpg" alt="new york rangers logo">
+       <div class="vs">VS</div>
+     <img src="https://s3-alpha-sig.figma.com/img/12a7/8018/125f52a29fb333f7c5ad3aa602c7e561?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YxMLL~X5ZnBfQ~OyEiyq8snf2H8dJZsgLzgCxwazbVR8gSLlnYoe98M56fdAbwB8huEfvt~a9ZTSJ1b-kDAnIHA6UV6T~R1THpZ9fKnMzUStDG-sfTjBl1qYFFE-3FFe2mAjLr~2NROLwuTk9KRESYKHR8nA7mu9rj6xcRHD2YseKEu0nCyTP49OPE3a73mpyntTr-f0CKdw20S~tLQ6e~We7OyUDuK~FIiZOuGzkv6egdxgOQjFp1SY26ame0qu0iq9LiKbfgJeobiXm4vICjzIav0ei-3ydbGN4yxqbt67de2cWWe4sBJRy-CYRAtpN6c6d~8GnEXciNgg3BXgrA__" alt=" Detroit red wings logo"></div></div></span>
       <div class="result"><span class="scores">1</span>
       <span class="scoress">:</span>
-      <span class="score">1</span></div>
+      <span class="score">1</span></div></span>
     </div></div>
   </body></html>
 
