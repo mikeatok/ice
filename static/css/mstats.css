@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+}
+
+.doppio-one-regular {
+    font-family: "Doppio One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.topbar{
+    height: 6.875rem;
+    width: 100%;
+    margin:0%;
+}
+
+.topbar h1{
+    font-size: 1.602rem;
+    background-color: #8483E2;
+    color: #EBF5EE;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 4rem;
+}
+
+.card{
+    height: 280px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #48479B;
+    border-radius: 12%;
+    box-shadow: 0rem 0rem 0.5rem ;
+    flex-shrink: 0;
+    
+}
+
+.half{
+    width: 50%;
+    float: left;
+}
+
+.scores h1{
+    font-size: 32.04px;
+    text-align: center;
+}
+
+.teams h2{
+    font-size: 17.78px;
+}
+
+.lineups p{
+    font-size: 13.89px;
+}
+
