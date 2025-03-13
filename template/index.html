@@ -15,7 +15,7 @@
     </div>
     
     
-</body>
+
 
 <link rel="stylesheet" href="static/css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,9 +34,9 @@
 
 h1 {display: flex;align-items: center;justify-content: center;background-color:#8483E2;color: white;height: 100px;font-size: xx-large;padding-bottom: 1rem;width: 100%}
 
-.container {margin: 1.5rem 1rem;}
+.container {margin: 1.5rem 1rem; padding-bottom: 3rem;}
 
-.cards { width: auto; background-color: #5C5BC7; color: white; border-radius: 1.25rem; justify-content: end;}
+.cards { width: 100%; background-color: #5C5BC7; color: white; border-radius: 1.25rem;}
 
 .cards-image{margin-left: auto;  margin-right: auto;  width: 100%;  height: 75%;  object-fit: cover;  background-size: cover;  border-top-right-radius: 1.25rem;  border-top-left-radius: 1.25rem}
 
@@ -49,17 +49,6 @@ input.search{height: 3rem; width: 90%; box-shadow: #767679; stroke: black; box-s
 .fa-magnifying-glass{display: flex; padding-left: 2rem; font-size: xx-large;}
 
 .thumbsup,.comment,.share{font-size: xx-large;display: inline; padding-left: 1rem; justify-content: baseline;}
-
-.fa-solid.fa-house{width: 3.125rem;
-height: 3.125rem;
-flex-shrink: 0;fill: var(--Foundation-Night-night-500, #0A0A0A); font-size: 3rem;}
-.fa-solid.fa-bell{width: 3.125rem;
-height: 3.125rem;
-flex-shrink: 0; fill: var(--Foundation-Night-night-500, #0A0A0A); font-size: 3rem;}
-.fa-solid.fa-heaart{width: 3.125rem;
-height: 3.125rem;
-flex-shrink: 0;
-fill: var(--Foundation-Night-night-500, #0A0A0A); font-size: 3rem;}
 .teamname{display: flex;
 width: 100;
 height: 2.75rem;
@@ -70,6 +59,8 @@ text-align: center;
 background-color: #5C5BC7;
 padding-left: 0.1rem;
 color: #FFF;
+border-top-right-radius: 1.25rem;
+border-top-left-radius: 1.25rem;
 
 
 /* Body - 20px */
@@ -84,7 +75,7 @@ img{width: 4.72638rem;
 height: 5rem;
 flex-shrink: 0;}
 .image{display: flex; justify-content: space-evenly;}
-h2{margin-top: 2rem; display: flex;
+h4{margin-top: 2rem; display: flex;
   color: #000;
 text-align: center;
 
@@ -95,7 +86,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;}
 .score{display: flex; justify-content: space-evenly; margin-top: 1rem; background-color: #5C5BC7; height: 2.75rem; align-items: center;color: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
-text-align: center;
+text-align: center; border-bottom-right-radius: 1.25rem ; border-bottom-left-radius: 1.25rem;
 
 /* Heading 3 - 32.04px */
 font-family: "Doppio One";
@@ -104,6 +95,13 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+.bottombar{margin-top: 0.5rem;bottom: 0; position: fixed; overflow: scroll; width: 100%; margin: -1.5rem -1rem; height: 5rem; background-color: #D9D9D9;}
+.fa-solid.fa-heart,.fa-solid.fa-bell,.fa-solid.fa-house{width: 1rem;justify-content: space-evenly;
+  height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.icons{display: flex; justify-content: space-evenly; text-align: center; font-size: 2rem;}
 
 
 </style>
@@ -137,12 +135,12 @@ line-height: normal;
      
      <div class="scorebar">
     <div class="teamname">
-      <p> New York Yangers</p>
+      <p> New York Rangers</p>
       <p>Detroit Red wings</p>
     </div>
     <div class="image">
       <img src="https://i.ebayimg.com/images/g/9gwAAOSwdQFdtVOb/s-l1200.jpg" alt="new york rangers logo">
-      <h2>VS</h2>
+      <h4>VS</h4>
       <img src="https://s3-alpha-sig.figma.com/img/12a7/8018/125f52a29fb333f7c5ad3aa602c7e561?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YxMLL~X5ZnBfQ~OyEiyq8snf2H8dJZsgLzgCxwazbVR8gSLlnYoe98M56fdAbwB8huEfvt~a9ZTSJ1b-kDAnIHA6UV6T~R1THpZ9fKnMzUStDG-sfTjBl1qYFFE-3FFe2mAjLr~2NROLwuTk9KRESYKHR8nA7mu9rj6xcRHD2YseKEu0nCyTP49OPE3a73mpyntTr-f0CKdw20S~tLQ6e~We7OyUDuK~FIiZOuGzkv6egdxgOQjFp1SY26ame0qu0iq9LiKbfgJeobiXm4vICjzIav0ei-3ydbGN4yxqbt67de2cWWe4sBJRy-CYRAtpN6c6d~8GnEXciNgg3BXgrA__" alt=" Detroit red wings logo">
       </div>
       <div class="score">
@@ -151,12 +149,14 @@ line-height: normal;
         <h3>1</h3>
       </div>
       </div>
-    <footer>
-      <span class="bottom-bar">
+      <nav class="bottombar">
+        <div class="icons">
       <i class="fa-solid fa-house"></i>
       <i class="fa-solid fa-bell"></i>
-      <i class="fa-solid fa-heart"></i></span>
-    </footer>
+      <i class="fa-solid fa-heart"></i></div></nav>
+      
+
+  
   </body></html>
 
 {% endblock %}
