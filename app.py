@@ -1,9 +1,10 @@
 from flask import Flask,render_template
 PORT= 2000
+from lineups import tLineup
 from Cards import cards
 from signup import signin
 from login import logins
-from lineups import tLineup
+
 app = Flask(__name__,template_folder='template')
 
 @app.route("/") 
