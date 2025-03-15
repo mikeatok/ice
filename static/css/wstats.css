@@ -28,19 +28,22 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
-}
-
-.TeamRankingsbox{
     display: flex;
     width: 376px;
     height: 33px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #48479B;
+}
+
+.TeamRankingsbox{
+    display: flex;
     width: 380px;
-    height: 239.885px;
+    height: 243px;
+    padding: 0px 0px 3.115px 0px;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
-    border-radius: 15px;
-    background: var(--Foundation-Slate-Blue-slate-blue-50, #ebebf0);
 }
