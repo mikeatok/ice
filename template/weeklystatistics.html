@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weekly statistics</title>
-    <h1>4 The Fans</h1>
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
+    <div class="topbar">
+        <h1>4 The Fans</h1>
+    </div>
+ 
+    <link rel="stylesheet" href="static/css/wstats.css">
+    <link rel="stylesheet" href="static/css/wstats.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 <body>
-    <div>
+    <div class="TeamRankings">
         <h2>
         Team Rankings
         </h2>
     </div>
-</body>
+<div class="TeamRankingsbox">
+    
+</div>
+<div class="weeklystatistics">
+    {% if weeklystatistics != None: %}
+    {% for weeklystatistics in weeklystats%}
+      <div class="weeklystats">
+          <h2 class="roboto-body">{{ weeklystats['body'] }}</h2>
+        </div>
+        {% endfor %}
+        {% endif %}
+</div>
+    </body>
+</head>
 </html>
