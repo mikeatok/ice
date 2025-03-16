@@ -27,34 +27,154 @@
     padding-top: 4rem;
 }
 
-.card{
-    height: 280px;
+.mResults{
+    height: 20rem;
     width: 380px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    background-color: #5C5BC7;
+    border-radius: 12%;
+    box-shadow: 0rem 0rem 0.5rem ;
+    flex-shrink: 0;
+}
+
+.sLine{
+    height: 40px;
+    display: flex;
     background-color: #48479B;
+}
+
+.sLine h1{
+    background-color: transparent;
+    color: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
+    text-align: center;
+    font-family: "Doppio One";
+    font-size: 32.04px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.s1{
+    width: 40%;
+    height:100%;
+    background-color: transparent;
+}
+
+.mid{
+    width: 20%;
+    height:100%;
+    background-color: transparent;
+}
+
+.s2{
+    width: 40%;
+    height:100%;
+    background-color: transparent;
+}
+
+.tNames{
+    height:40px;
+    display: flex;
+    background-color: #48479B;
+}
+
+.tNames h2{
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: "Doppio One";
+    font-size: 17.78px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ts1{
+    width: 50%;
+    background-color: transparent;
+}
+
+.ts2{
+    width: 50%;
+    background-color: transparent;
+}
+
+.tSheets{
+    height:200px;
+    display: flex;
+}
+
+.tSheets p{
+    background-color: transparent;
+    color: var(--Foundation-Night-night-500, #0A0A0A);
+    font-family: "Doppio One";
+    font-size: 13.89px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.tl1{
+    width: 50%;
+    background-color: transparent;
+}
+
+.tl2{
+    width: 50%;
+    background-color: transparent;
+}
+
+.highlight{
+    height: 20rem;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #5C5BC7;
     border-radius: 12%;
     box-shadow: 0rem 0rem 0.5rem ;
     flex-shrink: 0;
     
 }
 
-.half{
-    width: 50%;
-    float: left;
+.highlight img{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    background-size: cover;
+    border-top-right-radius: 12%;
+    border-top-left-radius: 12%;  
 }
 
-.scores h1{
-    font-size: 32.04px;
+.title{
+    color: #EBF5EE;
+    font-size: 0.889rem;
+    padding: 1%;
+    background-color: transparent;
     text-align: center;
 }
 
-.teams h2{
-    font-size: 17.78px;
+.body p{
+    color: #EBF5EE;
+    padding: 2%;
+    padding-left: 6%;
+    background-color: transparent;
+    
 }
 
-.lineups p{
-    font-size: 13.89px;
+.title h2{
+    background-color: transparent;
+    
 }
+
+.body{
+    background-color: transparent;
+}
+
 
