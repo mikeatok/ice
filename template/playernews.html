@@ -11,8 +11,8 @@
         <h2>Trade News</h2>
     </div>
     <div class="container">
-        {% if Cards != None: %}
-        {% for card in Cards %}
+        {% if trades != None: %}
+        {% for trade in trades %}
         <div class="card">
             <img src="{{ card['source'] }}">
             <div class="title">

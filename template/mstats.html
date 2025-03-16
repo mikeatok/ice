@@ -13,16 +13,24 @@
     <div class="container">
         
         <div class="card">
+            <span>
             {% if lineups != None: %}
             {% for tLineup in lineups %}
-            <div class="half">
-                <div class="halftop">
-                    <div class="scores">
-                        <h1>{{ tLineup['score'] }} </h1> 
-                    </div>
-                    <div class="teams">
-                        <h2>{{ tLineup['teamName'] }}</h2>
-                </div>    
+            <div class="half1">
+                <div class="top">
+                        <div class="scores">
+                            <h1>{{ tLineup['score'] }} </h1> 
+                        </div>
+                        <div class="teams">
+                            <h2>{{ tLineup['teamName'] }}</h2>
+                        </div>                    
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% if lineups != None: %}
+            {% for tLineup in lineups %}
+            <div class="half2">      
                 <div class="lineups">
                     <div class ="attack">
                         <p>{{ tLineup['fLineup'] }}</p>
@@ -37,6 +45,9 @@
             </div>
             {% endfor %}
             {% endif %}
+            </span>
+            
+            
         </div>
 
     </div>
