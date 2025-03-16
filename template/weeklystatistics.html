@@ -21,16 +21,16 @@
         </h2>
     </div>
 <div class="TeamRankingsbox">
-    <h2 
+    <h2></h2>
 </div>
 <div class="weeklystatistics">
     {% if weeklystatistics != None: %}
     {% for weeklystatistics in weeklystats%}
-      <div class="weeklystats">
+        <div class="weeklystats">
           <h2 class="roboto-body">{{ weeklystats['body'] }}</h2>
         </div>
-        {% endfor %}
-        {% endif %}
+    {% endfor %}
+    {% endif %}
 </div>
     </body>
 </head>
