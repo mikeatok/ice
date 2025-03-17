@@ -5,19 +5,3 @@
     background-color: #FAFAFA;
 }
 
-.card{
-    height: 20rem;
-    width: 380px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    background-color: #5C5BC7;
-    border-radius: 12%;
-    box-shadow: 0rem 0rem 0.5rem ;
-    flex-shrink: 0;
-    
-}
-
-.half1{
-    display:flex
-}

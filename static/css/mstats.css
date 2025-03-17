@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FAFAFA;
 }
 
 .doppio-one-regular {
@@ -27,13 +26,15 @@
     padding-top: 4rem;
 }
 
+
+
 .mResults{
     height: 20rem;
     width: 380px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    background-color: #5C5BC7;
+    background-color: #FAFAFA;
     border-radius: 12%;
     box-shadow: 0rem 0rem 0.5rem ;
     flex-shrink: 0;
@@ -43,6 +44,8 @@
     height: 40px;
     display: flex;
     background-color: #48479B;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
 }
 
 .sLine h1{
@@ -54,22 +57,23 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 0.25rem;
 }
 
 .s1{
-    width: 40%;
+    width: 45%;
     height:100%;
     background-color: transparent;
 }
 
 .mid{
-    width: 20%;
+    width: 10%;
     height:100%;
     background-color: transparent;
 }
 
 .s2{
-    width: 40%;
+    width: 45%;
     height:100%;
     background-color: transparent;
 }
@@ -78,6 +82,7 @@
     height:40px;
     display: flex;
     background-color: #48479B;
+    padding-top: 0.2rem;
 }
 
 .tNames h2{
@@ -104,28 +109,59 @@
 .tSheets{
     height:200px;
     display: flex;
+    margin-top: 1rem;
+    background-color: transparent;
 }
 
 .tSheets p{
     background-color: transparent;
     color: var(--Foundation-Night-night-500, #0A0A0A);
     font-family: "Doppio One";
-    font-size: 13.89px;
+    font-size: 0.86813rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: center;
+    margin-top: 0.2rem;
 }
 
 .tl1{
     width: 50%;
     background-color: transparent;
+    margin-left: 1rem;
 }
 
+.tl1 p{
+    margin-left: 0.5rem;
+    font-family: "Doppio One";
+    font-size: 0.86813rem;
+    text-align: left;
+}
+
+.tl1 li{
+    margin-left:1.8rem;
+    font-family: "Doppio One";
+    font-size: 0.86813rem;
+}
 .tl2{
     width: 50%;
     background-color: transparent;
 }
+
+.tl2 p{
+    margin-left: 0.5rem;
+    font-family: "Doppio One";
+    font-size: 0.86813rem;
+    text-align: left;
+}
+
+.tl2 li{
+    margin-left:1.8rem;
+    font-family: "Doppio One";
+    font-size: 0.86813rem;
+}
+
+
 
 .highlight{
     height: 20rem;
@@ -136,20 +172,15 @@
     background-color: #5C5BC7;
     border-radius: 12%;
     box-shadow: 0rem 0rem 0.5rem ;
-    flex-shrink: 0;
-    
 }
 
 .highlight img{
-    
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     height: 75%;
     object-fit: cover;
     background-size: cover;
     border-top-right-radius: 12%;
-    border-top-left-radius: 12%;  
+    border-top-left-radius: 12%;
 }
 
 .title{
@@ -160,14 +191,6 @@
     text-align: center;
 }
 
-.body p{
-    color: #EBF5EE;
-    padding: 2%;
-    padding-left: 6%;
-    background-color: transparent;
-    
-}
-
 .title h2{
     background-color: transparent;
     
@@ -175,9 +198,7 @@
 <<<<<<< HEAD
 =======
 
-.body{
-    background-color: transparent;
-}
+
 
 
 >>>>>>> 01e23645f1328f8f45fa975cd72d84a66ef19909
