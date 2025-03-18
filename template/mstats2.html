@@ -71,18 +71,20 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="contain">
         {% if lineups != None: %}
         {% for tLineup in lineups %}
         <div class="highlight">
-            <img source="{{ tLineup['source'] }}">
+            <img src="{{ tLineup['source'] }}">
             <div class="title">
                 <h2>{{ tLineup['title'] }}</h2>
+            </div>
+            <div class="body">
+                <p>{{ tLineup[body] }}</p>
             </div>
         </div>
         {% endfor %}
         {% endif %}
-        <img src="https://media.istockphoto.com/id/529964085/photo/mango.jpg?s=612x612&w=0&k=20&c=rmcMZlLOZFdn4NhUcjnaJ3EBHKYZQ4xH4xzpzFU4JgY=" />
     </div>
 </div>
 
