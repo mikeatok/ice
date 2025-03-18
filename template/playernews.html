@@ -14,18 +14,26 @@
         {% if trades != None: %}
         {% for trade in trades %}
         <div class="card">
-            <img src="{{ card['source'] }}">
+            <img src="{{ trade['source'] }}">
             <div class="title">
-                <h2>{{ card['title'] }}</h2>
+                <h2>{{ trade['title'] }}</h2>
             </div>
             <div class="body">
-                <p>{{ card[body] }}</p>
+                <p>{{ trade[body] }}</p>
             </div>
         </div>
         {% endfor %}
         {% endif %}
     </div>
 </div>
+
+<nav class="bottombar">
+    <div class="icons">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+</nav>
 
 {% endblock %}
 {% block scripts %}

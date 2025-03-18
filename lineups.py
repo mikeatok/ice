@@ -1,19 +1,7 @@
 tLineup = [
     {
         "id": 1,
-        "teamName": "New York Rangers",
-        "fLineup": "Forwards: -Kyle Johnson -Tyler White -Sam Evans",
-        "dLineup": "Defence: -Chris Carters -Jake Wilson",
-        "gLineup": "Goaltender: Patrick Stevens",
-        "score": "1"
-    },
-
-    {
-        "id": 2,
-        "teamName": "Detroit Red Wings",
-        "fLineup": "Forwards: -Ethan Hayes -Matt Peterson -Aaron Foster",
-        "dLineup": "Defence: -Ryan Moore -Alex Cooper",
-        "gLineup": "Goaltender: Daniel Brooks",
-        "score": "1"
+        "source": "https://www.detroitnews.com/gcdn/authoring/authoring-images/2024/10/15/PDTN/75680760007-getty-images-2178454443.jpg?width=700&height=494&fit=crop&format=pjpg&auto=webp",
+        "title": "Will Cuylle body checks Alex DeBrincat",
     }
 ]

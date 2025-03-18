@@ -8,7 +8,7 @@
 .topbar{
     height: 6.875rem;
     width: 100%;
-    margin:0%;
+    margin:0%
 }
 
 .topbar h1{
@@ -28,14 +28,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: flex;
-    width: 376px;
-    height: 33px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    border-radius: 15px 15px 0px 0px;
     background-color: #48479B;
+    margin-bottom: 30px;
 }
 
 .TeamRankingsbox{
@@ -47,3 +41,18 @@
     align-items: center;
     flex-shrink: 0;
 }
+
+.h2rankingstable{
+    font-family: "Doppio One";
+    font-size: 13.89px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h2{
+    width: 380px;
+    height: 1rem;
+    flex-shrink: 0;
+    border-radius: 15px 15px 0px 0px;
+    background: var(--Foundation-Slate-Blue-slate-blue-700, #48479B);
+    }

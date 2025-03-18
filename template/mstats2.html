@@ -42,33 +42,45 @@
                     <p>Defence:</p>
                     <ul>
                         <li>-Chris Carters</li>
-                        <l1>-Jake Wilson</l1>
+                        <li>-Jake Wilson</li>
                     </ul>
                     <p>Goaltender:</p>
-                        <ul>
-                            <li>Patrick Stevens</li>
-                        </ul>
+                    <ul>
+                        <li>Patrick Stevens</li>
+                    </ul>
                 </span>
                 <span class="tl2">
                     <p>
-                        Forwards: -Ethan Hayes -Matt Peterson -Aaron Foster
-                        Defence: -Ryan Moore -Alex Cooper
-                        Goaltender: Daniel Brooks
+                        Forwards:
                     </p>
+                    <ul>
+                        <li>-Ethan Hayes</li>
+                        <li>-Matt Peterson</li>
+                        <li>-Aaron Foster</li>
+                    </ul>
+                    <p>Defence:</p>
+                    <ul>
+                        <li>-Ryan Moore</li>
+                        <li>-Alex Cooper</li>
+                    </ul>
+                    <p>Goaltender:</p>
+                    <ul>
+                        <li>Daniel Brooks</li>
+                    </ul>
                 </span>
             </div>
         </div>
     </div>
     <div class="contain">
-        {% if Cards != None: %}
-        {% for card in Cards %}
+        {% if lineups != None: %}
+        {% for tLineup in lineups %}
         <div class="highlight">
-            <img src="{{ card['source'] }}">
+            <img src="{{ tLineup['source'] }}">
             <div class="title">
-                <h2>{{ card['title'] }}</h2>
+                <h2>{{ tLineup['title'] }}</h2>
             </div>
             <div class="body">
-                <p>{{ card[body] }}</p>
+                <p>{{ tLineup[body] }}</p>
             </div>
         </div>
         {% endfor %}
