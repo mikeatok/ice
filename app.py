@@ -6,11 +6,10 @@ from signup import signin
 from login import logins
 from weeklystatistics import weeklystats
 from trades import trade
-
 app = Flask(__name__,template_folder='template')
 @app.route("/") 
 def index(): 
-	return render_template("weeklystatistics.html",trades=trade)
+	return render_template("index.html",Cards=cards)
 if __name__ == "__main__": 
 	app.run(debug=True, host = '0.0.0.0', port=PORT) 
 	app.register_blueprint("home_bp")
