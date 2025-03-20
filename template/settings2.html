@@ -1,0 +1,30 @@
+{% extends "bases.html" %} 
+
+{% block title %}4 The Fans{% endblock %}
+
+{% block content %}
+
+<div>
+    <div class="topbar">
+        <h1>4 The Fans</h1>
+    </div>
+    <div class="container">
+        {% if settings != None: %}
+        {% for sett in settings %}
+        <div class="bar">
+            <div class="icon1">
+                <img src="">
+            </div>
+            <div class="name">
+                <h1>{{ sett['name'] }}</h1>
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
