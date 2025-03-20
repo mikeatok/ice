@@ -7,6 +7,7 @@
     <div class="topbar">
         <h1>4 The Fans</h1>
     </div>
+</head>
  
     <link rel="stylesheet" href="static/css/wstats.css">
     <link rel="stylesheet" href="static/css/wstats.css">
@@ -47,14 +48,23 @@
 </div class="Teamrankingsbox">
 </div class="TeamRankings">
 <div class="weeklystatistics">
+</body>
+    <div class ="container">
     {% if weeklystatistics != None: %}
-    {% for weeklystatistics in weeklystats%}
-        <div class="weeklystats">
-          <h2 class="roboto-body">{{ weeklystats['body'] }}</h2>
+    {% for wstats in weeklystatistics %}
+    <div class="card">
+        <img src="{{ wstats['source'] }}">
+        <div class="title">
+            <h3>{{ wstats['title'] }}</h3>
         </div>
-    {% endfor %}
-    {% endif %}
+        <div class="body">
+            <p>{{ wstats['body'] }}</p>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+        </div>
+  
 </div>
-    </body>
-</head>
+    </div>
 </html>
