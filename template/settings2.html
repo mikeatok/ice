@@ -8,21 +8,80 @@
     <div class="topbar">
         <h1>4 The Fans</h1>
     </div>
+    <div class="setting">
+        <div arrow>
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div title>
+            <h1>Settings</h1>
+        </div>
+    </div>
     <div class="container">
-        {% if settings != None: %}
-        {% for sett in settings %}
         <div class="bar">
             <div class="icon1">
-                <img src="">
+                <i class="fa-regular fa-bell"></i>
             </div>
             <div class="name">
-                <h1>{{ sett['name'] }}</h1>
+                <h1>Notifications</h1>
+            </div>
+            <div class="icon2">
+                <img src="">
             </div>
         </div>
-        {% endfor %}
-        {% endif %}
+        <div class="bar">
+            <div class="icon1">
+                <i class="fa-regular fa-moon"></i>
+            </div>
+            <div class="name">
+                <h1>Dark Mode</h1>
+            </div>
+            <div class="icon2">
+                <img src="">
+            </div>
+        </div>
+        <div class="bar">
+            <div class="icon1">
+                <i class="fa-regular fa-address-book"></i>
+            </div>
+            <div class="name">
+                <h1>Contact</h1>
+            </div>
+            <div class="icon2">
+                <img src="">
+            </div>
+        </div>
+        <div class="bar">
+            <div class="icon1">
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="name">
+                <h1>Rate App</h1>
+            </div>
+            <div class="icon2">
+                <img src="">
+            </div>
+        </div>
+        <div class="bar">
+            <div class="icon1">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+            <div class="name">
+                <h1>Logout</h1>
+            </div>
+            <div class="icon2">
+                <img src="">
+            </div>
+        </div>
     </div>
 </div>
+
+<nav class="bottombar">
+    <div class="icons">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+</nav>
 
 {% endblock %}
 {% block scripts %}
