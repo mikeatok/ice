@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FAFAFA;
 }
 
 .topbar{
@@ -74,4 +73,16 @@ h2{
     line-height: normal;
     color: #000000;
     margin-top: 4rem;
+}
+.bottombar{
+    margin-top: 0.5rem;bottom: 0; position: fixed; overflow: scroll; height: 4rem; background-color:#D9D9D9; width: 100%;
+}
+.fa-solid.fa-heart,.fa-solid.fa-bell,.fa-solid.fa-house{
+    width: 1rem;justify-content: space-evenly;
+  height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.icons{
+    display: flex; justify-content: space-evenly; text-align: center; font-size: 2rem;
 }
