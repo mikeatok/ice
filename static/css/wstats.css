@@ -20,29 +20,21 @@
 }
 
 .TeamRankings{
-    color: #000000;
     text-align: center;
     font-family: "Doppio One";
-    width: 90%;     
+    width: 360px;     
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     height: 40%;
-    border-radius: 15px 15px 0px 0px;
-    padding-left: 1rem;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0rem 0rem 0.5rem;
    }
 
-.TeamRankingsbox{
-    display: flex;
-    width: 380px;
-    height: 243px;
-    padding: 0px 0px 3.115px 0px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
 
 .h2rankingstableleft{
     width: 50%;
@@ -56,19 +48,19 @@
     padding-top: 1rem;
     border-radius: 0px 0px 15px 0px;
 }
-h2{
-    width: 360px;
+.tRank h2{
+    width: 100%;
     height: 3rem;
     flex-shrink: 0;
     border-radius: 15px 15px 0px 0px;
     background-color: #48479B;
     color: #FFF;    
-    }
-    .Rankingstable{
+}
+.Rankingstable{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 12rem;
-    width: 360px;
+    width: 100%;
     display: flex;
     text-align: left;
     font-family: "Doppio One";
