@@ -1,12 +1,10 @@
 {% extends "basem.html" %} 
 
-{% block title %}4 The Fans{% endblock %}
+{% block title %}{% endblock %}
 
 {% block content %}
 
-    <div class="topbar">
-        <h1>4 The Fans</h1>
-    </div>
+    <div class="containers">
     <div class="container">
         <div class="mResults">
             <div class="sLine">
@@ -81,13 +79,23 @@
             <div class="body">
                 <p>{{ tLineup[body] }}</p>
             </div>
+          
         </div>
+    </div>
         {% endfor %}
         {% endif %}
     </div>
-</div>
 
+<nav class="bottombar">
+    <div class="icons">
+  <i class="fa-solid fa-house"></i>
+  <i class="fa-solid fa-bell"></i>
+  <i class="fa-solid fa-heart"></i></div></nav>
+  <div>
+    
+  
 {% endblock %}
 {% block scripts %}
+
 
 {% endblock %}
