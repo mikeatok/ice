@@ -10,8 +10,6 @@
     font-style: normal;
   }
   
-
-
 .pnews{
     display: flex;
     width: 380px;
@@ -101,8 +99,7 @@
 }
 
 .bottombar{
-    margin-top: 0.5rem;bottom: 0; position: fixed; overflow: scroll; height: 4rem; background-color:#D9D9D9; width: 100%;
-    
+    margin-top: 0.5rem;bottom: 0; position: fixed; overflow: scroll;margin: -1.5rem 0rem; height: 5rem; background-color: #D9D9D9; width: 100%;
 }
 .fa-solid.fa-heart,.fa-solid.fa-bell,.fa-solid.fa-house{
     width: 1rem;justify-content: space-evenly;

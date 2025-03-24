@@ -74,7 +74,13 @@
     margin-top: 3.5rem;
     margin-bottom: 0.5rem;
     border-radius: 1.25rem;
-    display: flex;  
+    display: flex;
+    box-shadow: 0rem 0rem 0.15rem;  
+    transition-duration: 0.4s;
+}
+
+.bar:hover{
+    background-color: #F5F5F5;
 }
 
 .name{

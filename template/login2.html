@@ -1,0 +1,29 @@
+{% extends "basem.html" %} 
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+
+  <div class="logins">
+    {% if login != None: %}
+    {% for logins in login%}
+        <div class="login">
+          <h2 class="roboto-body">{{ logins['body'] }}</h2>
+          <div class="inputt">
+          <input type="text" required></div>
+        </div>          
+    {% endfor %}
+    {% endif %}
+  </div>
+<div>
+
+  <button type="button"> Login</button></div>
+  <div class="button">
+  <button type="button"> Sign up</button></div>
+
+{% endblock %}
+{% block scripts %}
+
+
+{% endblock %}
