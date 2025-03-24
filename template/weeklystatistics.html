@@ -58,12 +58,14 @@
     {% for wstats in weeklystatistics %}
     <div class="card">
         <img src="{{ wstats['source'] }}">
-        <div class="title">
-            <h3>{{ wstats['title'] }}</h3>
-        </div>
-        <div class="body">
-            <p>{{ wstats['body'] }}</p>
-        </div>
+        <div class="text">
+            <div class="title">
+                <h3>{{ wstats['title'] }}</h3>
+            </div>
+            <div class="body">
+                <p>{{ wstats['body'] }}</p>
+            </div>
+        </div>   
         {% endfor %}
         {% endif %}
     </div>

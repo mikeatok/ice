@@ -74,3 +74,55 @@
 td{
     margin-top: 4rem;
 }
+
+.card img {
+    width: 90px;
+    height: 113.125px;
+    flex-shrink: 0;
+    border-radius: 113.125px;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.body{
+    display: flex;
+    width: 259.95px;
+    height: 115.387px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--Foundation-Night-night-500, #0A0A0A);
+    text-align: center;
+    font-family: "Doppio One";
+    font-size: 13.89px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card h3{
+    display: flex;
+    width: 260.896px;
+    height: 28.281px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--Foundation-Night-night-500, #0A0A0A);
+    text-align: center;
+    font-family: "Doppio One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+
+.card {
+    width: 360px;
+    height: 181px;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--Foundation-Slate-Blue-slate-blue-50, #F0F0FB);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.50);
+    margin-left: 1rem;
+}
