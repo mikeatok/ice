@@ -1,9 +1,9 @@
 logins= [{
     "id": 1,
-    "body": "username",
+    "body": "Username",
     
 },
 {
     "id": 2,
-    "body":"password",}
+    "body":"Password",}
 ]

@@ -1,0 +1,46 @@
+{% extends "basel.html" %} 
+
+{% block title %}4 The Fans{% endblock %}
+
+{% block content %}
+
+<div>
+  <div class="topbar">
+    <h1>4 The Fans</h1>
+  </div>
+
+  <div class="logins">
+    {% if login != None: %}
+    {% for logins in login%}
+        <div class="login">
+          <div class="name">
+            <h1>{{ logins['body'] }}</h1>
+          </div>
+          <div class="uInput">
+            <input type="text" required>
+          </div>
+        </div>          
+    {% endfor %}
+    {% endif %}
+  </div>
+  
+  
+</div>
+  
+<div class="button">
+  <button type="b1">
+    Login
+  </button>
+</div>
+<div class="button">
+  <button type="b2">
+    Sign up
+  </button>
+</div>
+
+
+{% endblock %}
+{% block scripts %}
+
+
+{% endblock %}
