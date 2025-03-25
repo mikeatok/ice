@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fffaf8;
 }
 
 .doppio-one-regular {
@@ -30,5 +29,58 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.logins{
+    margin-top: 30%;
+    object-position: center;
+}
+
+.login{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    display: flex;
+    width: 21.875rem;
+    height: 6.25rem;
+    padding-top: 1.05263rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.33625rem;
+    flex-shrink: 0;
+}
+
+.login h1{
+    color: var(--Foundation-Night-night-600, #090909);
+    font-family: "Doppio One";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2%;
+}
+
+.uInput{
+    outline: none;
+    stroke: none;
+    stroke-opacity: 0%;
+}
+
+.uInput input{
+    width: 21.875rem;
+    height: 3.53775rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border:transparent;
+}
+
+.button{
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
 }
 
