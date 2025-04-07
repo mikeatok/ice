@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+    <title> signup page</title>
     <h1>4 the fans</h1>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/style.css">
@@ -12,12 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
 
-</head>
+
 <body>
-   
+    <div class="inputts">
+    <div class="username">
+        <div class="usernames"><label for="username"> Username</label></div>
+        <input type="text" id="username" required>
+      </div>
+        <div class="passworrd">
+        <div class="password"><label for="password"> password</label></div>
+        <input type="password" id="password" required>
+      </div>
+      <div class="passwoord">
+        <div class="password"><label for="passwoord"> Confirm password</label></div>
+        <input type="password" id="passwoord" required>
+      </div>
+    </div>
+      <button type="button"> Sign Up</button>
+      <div class="button">
+      <button type="button"> Login</button></div></div>
 </body>
 <style>
-      
+      .inputts{margin:1.5rem 1rem; margin-bottom: 6rem}
       * {
   margin: 0;
   padding: 0;
@@ -34,11 +50,61 @@
     font-size: xx-large;
     padding-bottom: 1em;
     }
-    .signin{margin: 1.5rem 1rem;}
     
-    .signup{margin-bottom: 6rem;}
-    
-    input[type=text]{height: 3.5rem; width: 90%; border-radius: 0.5em; box-shadow: #767679; box-shadow: #5C5BC7; font-size: large; }
+    input[type=text]{height: 3.5rem; width: 90%;border-radius: 0.625rem;
+background: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); font-size: x-large;
+ }
+ input[type=password]{height: 3.5rem; width: 90%;border-radius: 0.625rem;
+background: var(--Foundation-White-Smoke-white-smoke-200, #FAFAFA);
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); font-size: x-large;
+ }
+ .password{color: var(--Foundation-Night-night-600, #090909);
+
+/* Body - 20px */
+font-family: "Doppio One";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;}
+.passworrd{display: flex;
+width: 100%;
+height: 6.25rem;
+padding-top: 1.05263rem;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 0.33625rem;
+margin-top: 6rem;}
+.username{display: flex;
+width: 100%;
+height: 6.25rem;
+padding-top: 1.05263rem;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 0.33625rem;
+flex-shrink: 0;
+margin-top: 5rem;
+}
+.usernames{color: var(--Foundation-Night-night-600, #090909);
+
+/* Body - 20px */
+font-family: "Doppio One";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;}
+.passwoord{display: flex;
+width: 100%;
+height: 6.25rem;
+padding-top: 1.05263rem;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 0.33625rem;
+flex-shrink: 0;
+margin-top: 5rem;}
     
     .roboto-body{display: flex;width: 11.875rem;height: 2.08331rem; flex-direction: column;justify-content: center;flex-shrink: 0;color: var(--Foundation-Night-night-600, #090909);/* Body - 20px */font-family: "Doppio One";font-size: 1.25rem;font-style: normal;font-weight: 400;line-height: normal;}
     
@@ -47,21 +113,8 @@
     .button button{background-color: #FFFBFA; color: black; align-items: center;}
     
     .login{background-color: #FFFBFA;}
+    .passwoord{margin-top: 6rem;}
+   
         </style>
-        <div class="signin">
-        {% if signup != None: %}
-        {% for signin in signup%}
-          <div class="signup">
-              <h2 class="roboto-body">{{ signin['body'] }}</h2>
-              <div class="inputt">
-              <input type="text" required></div>
-            </div>
-              
-        {% endfor %}
-        {% endif %}
-      </div>
      
-      <button type="button"> Sign Up</button>
-      <div class="button">
-      <button type="button"> Login</button></div>
 </html>
